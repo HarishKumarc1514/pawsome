@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PAWSOME</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="order">
+        <item>Random</item>
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>All</item>
+        <item>Animated</item>
+        <item>Static</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>None</item>
+    </string-array>
+
+    <string-array name="Breed">
+        <item>German Shepherd</item>
+        <item>Derman</item>
+        <item>Husky</item>
+        <item>Boxer</item>
+    </string-array>
+</resources>

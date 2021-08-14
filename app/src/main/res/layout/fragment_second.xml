@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab.SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:id="@+id/scrolltwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ordertextview"
+                android:layout_width="72dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="28dp"
+                android:text="Order"
+                android:textColor="#0C0C0C"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Breedsspinner"
+                app:layout_constraintEnd_toStartOf="@+id/typetextview"
+                app:layout_constraintHorizontal_bias="0.148"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32999998"
+                tools:ignore="MissingConstraints" />
+
+            <Spinner
+                android:id="@+id/Breedsspinner"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintEnd_toStartOf="@+id/typespinner"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/typetextview"
+                android:layout_width="54dp"
+                android:layout_height="27dp"
+                android:text="Type"
+                android:textColor="#0B0A0A"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/typespinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.596"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/catergorytextview"
+                android:layout_width="113dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="72dp"
+                android:text="Category"
+                android:textColor="#0C0C0C"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/catergoryspinner"
+                app:layout_constraintEnd_toStartOf="@+id/Breedtextview"
+                app:layout_constraintHorizontal_bias="0.21"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Breedsspinner"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <Spinner
+                android:id="@+id/typespinner"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.883"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.031"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/Breedtextview"
+                android:layout_width="72dp"
+                android:layout_height="32dp"
+                android:text="Breed"
+                android:textColor="#0B0A0A"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Breedspinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.628"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/typespinner"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
+
+            <Spinner
+                android:id="@+id/Breedspinner"
+                android:layout_width="176dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/catergoryspinner"
+                app:layout_constraintTop_toBottomOf="@+id/typespinner"
+                app:layout_constraintVertical_bias="0.047"
+                tools:ignore="MissingConstraints" />
+
+            <Spinner
+                android:id="@+id/catergoryspinner"
+                android:layout_width="172dp"
+                android:layout_height="46dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.066"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.098"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/srcimg1"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="60dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/catergoryspinner"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/srcimg2"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="60dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.929"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Breedspinner"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/srcimg3"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="60dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/catergoryspinner"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/srcimg4"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="200dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/catergoryspinner"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/srcimg5"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="200dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.929"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Breedspinner"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/srcimg6"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="200dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/catergoryspinner"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/srcimg7"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="340dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/catergoryspinner"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/srcimg8"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="340dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.929"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Breedspinner"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/srcimg9"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="340dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/catergoryspinner"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/morebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="296dp"
+                android:layout_marginRight="296dp"
+                android:text="More"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/srcimg7" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>
